@@ -1,7 +1,7 @@
 {
   "name": "swagger-reference",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "https://github.com/vpvnguyen/swagger-reference.git",
   "author": "vpvnguyen <vpvnguyen@gmail.com>",
   "license": "MIT",
@@ -15,5 +15,8 @@
     "@types/node": "^15.0.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "start": "nodemon"
   }
 }
