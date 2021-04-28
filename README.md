@@ -3,3 +3,19 @@
 Experimental sandbox for Swagger API
 
 src: https://blog.logrocket.com/documenting-your-express-api-with-swagger/
+
+## Configs
+
+- Add search bar
+
+```javascript
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  swaggerUi.setup(specs, { explorer: true })
+);
+```
+
+## Issues
+
+- ES Modules type error issues with swagger versions over 6
