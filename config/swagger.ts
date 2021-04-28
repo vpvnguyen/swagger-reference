@@ -25,12 +25,11 @@ const options = {
       },
     ],
   },
-  apis: ["./routes/books.js"],
+  apis: ["../api/books.ts"],
 };
 
-const specs = swaggerJsdoc(options);
-
+const openapiSpecification = swaggerJsdoc(options);
 const swaggerServe = swaggerUi.serve;
-const swaggerSetup = swaggerUi.setup(specs);
+const swaggerSetup = swaggerUi.setup(openapiSpecification);
 
 export { swaggerServe, swaggerSetup };
