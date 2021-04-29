@@ -9,12 +9,12 @@ src: https://blog.logrocket.com/documenting-your-express-api-with-swagger/
 - Add search bar
 
 ```javascript
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(specs, { explorer: true })
-);
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(specs, { explorer: true }));
 ```
+
+## Multi File Example
+
+- https://github.com/mohsen1/multi-file-swagger-example
 
 ## Issues
 
