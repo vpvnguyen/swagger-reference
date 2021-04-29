@@ -1,12 +1,11 @@
 import express from "express";
-import { swaggerServe, swaggerSetup } from "./config/swagger";
-
-import booksRouter from "./api/books";
+import swaggerMiddleware from "./middleware/swagger/swagger.middleware";
+import booksRouter from "./api/Books/books.routes";
 
 const app = express();
 const PORT = 5000;
 
-app.use("/api-docs", swaggerServe, swaggerSetup);
+app.use("/docs", swaggerMiddleware);
 
 app.use("/books", booksRouter);
 
